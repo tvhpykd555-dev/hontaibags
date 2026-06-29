@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产品中心 - 江苏宏泰箱包有限公司</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect x='30' y='48' width='140' height='5' rx='2.5' fill='%231B2A4A'/><rect x='97' y='48' width='6' height='83' rx='3' fill='%231B2A4A'/><rect x='30' y='131' width='140' height='5' rx='2.5' fill='%231B2A4A'/><path d='M58 34 Q100 10 142 34' fill='none' stroke='%231B2A4A' stroke-width='4' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.header{background:#1B2A4A;height:30px;line-height:30px;color:#fff;font-size:12px}
+.header .container{display:flex;justify-content:space-between;align-items:center}
+.header a{color:#C8A45C}
+
+.nav{background:#fff;border-bottom:2px solid #ddd;position:sticky;top:0;z-index:100}
+.nav .container{display:flex;align-items:center;height:60px}
+.nav-logo{display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700;color:#1B2A4A;margin-right:36px}
+.nav-logo small{display:block;font-size:9px;font-weight:400;color:#999}
+.nav-links{display:flex;list-style:none;gap:0}
+.nav-links>li{position:relative}
+.nav-links>li>a{display:block;padding:0 20px;font-size:13px;color:#333;line-height:58px;border-bottom:2px solid transparent}
+.nav-links>li>a:hover,.nav-links>li>a.on{color:#1B2A4A;border-bottom-color:#1B2A4A;font-weight:600}
+.nav-links .dropdown{position:absolute;top:100%;left:0;background:#fff;border:1px solid #e0e0e0;border-top:2px solid #1B2A4A;min-width:140px;display:none;z-index:200;box-shadow:0 3px 8px rgba(0,0,0,0.06)}
+.nav-links .dropdown a{display:block;padding:8px 16px;font-size:12px;color:#555;border-bottom:1px solid #f0f0f0;line-height:1.6}
+.nav-links .dropdown a:last-child{border-bottom:none}
+.nav-links .dropdown a:hover{background:#f8f8f8;color:#1B2A4A}
+.nav-links>li:hover .dropdown{display:block}
+.nav-toggle{display:none;background:none;border:none;font-size:20px;cursor:pointer;margin-left:auto;padding:4px 8px}
+
+.page-banner{background:linear-gradient(135deg,#1B2A4A,#2C3E6B);color:#fff;padding:30px 0;text-align:center}
+.page-banner h1{font-size:22px;letter-spacing:1px}
+.page-banner p{font-size:12px;color:rgba(255,255,255,0.7);margin-top:4px}
+
+.prod-page-wrap { display:flex; gap:24px; }
+.prod-side { width:180px; flex-shrink:0; }
+.prod-side h4 { font-size:14px; color:#fff; background:#1B2A4A; padding:10px 14px; border-radius:4px 4px 0 0; }
+.prod-side ul { list-style:none; border:1px solid #e5e5e5; border-radius:0 0 4px 4px; }
+.prod-side li { padding:8px 14px; font-size:12px; color:#555; border-bottom:1px solid #f0f0f0; cursor:pointer; }
+.prod-side li a { display:block; color:#555; }
+.prod-side li:last-child { border:none; }
+.prod-side li:hover { color:#1B2A4A; background:#FFFDF5; }
+.prod-side li.active { color:#1B2A4A; font-weight:600; background:#FFFDF5; }
+
+.prod-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+.prod-card { border:1px solid #e5e5e5; border-radius:6px; overflow:hidden; transition:.2s; background:#fff; }
+.prod-card:hover { border-color:#C8A45C; box-shadow:0 2px 10px rgba(0,0,0,0.04); }
+.prod-card .pimg { height:auto; background:#f5f5f5; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.prod-card .pimg img { width:100%; height:auto; object-fit:cover; }
+.prod-card .pinfo { padding:12px 14px 14px; }
+.prod-card .pinfo h3 { font-size:14px; color:#1B2A4A; margin-bottom:4px; }
+.prod-card .pinfo p { font-size:12px; color:#888; line-height:1.6; }
+.prod-card .pinfo .tags { display:flex; gap:4px; flex-wrap:wrap; margin-top:6px; }
+.prod-card .pinfo .tags span { font-size:10px; padding:2px 8px; border-radius:2px; background:#f5f5f5; color:#999; }
+
+.prod-list { display:flex; flex-direction:column; gap:8px; }
+.prod-row { display:flex; gap:12px; align-items:center; border:1px solid #eee; border-radius:6px; overflow:hidden; }
+.prod-row .pri { width:80px; height:80px; background:#f5f5f5; display:flex; align-items:center; justify-content:center; font-size:28px; color:#ccc; flex-shrink:0; }
+.prod-row .prb { flex:1; padding-right:12px; }
+.prod-row .prb h3 { font-size:13px; color:#1B2A4A; }
+.prod-row .prb p { font-size:11px; color:#888; }
+
+@media (max-width:860px) {
+  .prod-page-wrap { flex-direction:column; }
+  .prod-side { width:100%; }
+  .prod-grid { grid-template-columns:1fr 1fr; }
+}
+@media (max-width:640px) {
+  .prod-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div>OEM/ODM一站式箱包制造商 · <a href="contact.html">立即咨询</a></div>
+    <div style="font-size:11px;">
+      <a href="en/index.html" target="_blank" style="color:rgba(255,255,255,0.6);margin-right:6px;">🇬🇧 EN</a>
+      <a href="ja/index.html" target="_blank" style="color:rgba(255,255,255,0.6);">🇯🇵 日本語</a>
+    </div>
+  </div>
+</div>
+
+<div class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <svg width="26" height="26" viewBox="0 0 200 200"><rect x="30" y="48" width="140" height="5" rx="2.5" fill="#1B2A4A"/><rect x="97" y="48" width="6" height="83" rx="3" fill="#1B2A4A"/><rect x="30" y="131" width="140" height="5" rx="2.5" fill="#1B2A4A"/><path d="M58 34 Q100 10 142 34" fill="none" stroke="#1B2A4A" stroke-width="4"/></svg>
+      <span>宏泰箱包<small>HONGTAI BAGS</small></span>
+    </a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">网站首页</a></li>
+      <li>
+        <a href="about.html">关于我们</a>
+        <div class="dropdown">
+          <a href="about.html">公司简介</a>
+          <a href="about.html">核心设备</a>
+          <a href="about.html">合作客户</a>
+        </div>
+      </li>
+      <li>
+        <a href="products.html" class="on">产品中心</a>
+        <div class="dropdown">
+          <a href="products.html">背包</a>
+          <a href="products.html">购物袋</a>
+          <a href="products.html">托特包/拎包</a>
+          <a href="products.html">保冷包</a>
+          <a href="products.html">化妆包/收纳包</a>
+          <a href="products.html">腰包</a>
+          <a href="products.html">其他品类</a>
+        </div>
+      </li>
+      <li>
+        <a href="contact.html">联系我们</a>
+        <div class="dropdown">
+          <a href="contact.html">联系方式</a>
+          <a href="contact.html">在线留言</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="page-banner">
+  <div class="container">
+    <h1>产品中心</h1>
+    <p>多元产品线 · 品牌荟萃 · 一站采购</p>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="container">
+    <div class="prod-page-wrap">
+      <div class="prod-side">
+        <h4>产品分类</h4>
+        <ul id="catList">
+          <li class="active" data-cat="all"><a href="javascript:;" style="color:#1B2A4A;font-weight:600">全部产品</a></li>
+          <li data-cat="背包"><a href="javascript:;">背包</a></li>
+          <li data-cat="购物袋"><a href="javascript:;">购物袋</a></li>
+          <li data-cat="托特包"><a href="javascript:;">托特包/拎包</a></li>
+          <li data-cat="保冷包"><a href="javascript:;">保冷包</a></li>
+          <li data-cat="化妆包"><a href="javascript:;">化妆包/收纳包</a></li>
+          <li data-cat="腰包"><a href="javascript:;">腰包</a></li>
+          <li data-cat="其他"><a href="javascript:;">其他品类</a></li>
+        </ul>
+      </div>
+      <div style="flex:1;">
+        <div id="cat-all">
+          <h3 id="catTitle" style="font-size:15px;color:#1B2A4A;margin-bottom:10px;padding-bottom:6px;border-bottom:2px solid #1B2A4A;">全部产品</h3>
+          <div class="prod-grid" id="prodGrid">
+            <div class="prod-card" data-cat="保冷包"><div class="pimg"><img src="images/prod-cooler-thin.jpg" alt="薄款保冷拎包"></div><div class="pinfo"><h3>薄款保冷拎包</h3><p>轻便保温，适合日常购物/便当携带</p><div class="tags"><span>保冷</span><span>购物袋</span></div></div></div>
+            <div class="prod-card" data-cat="保冷包"><div class="pimg"><img src="images/prod-cooler-pouch.jpg" alt="保冷收纳包"></div><div class="pinfo"><h3>保冷收纳包</h3><p>多功能保冷，户外野餐/短途出行</p><div class="tags"><span>保冷</span><span>收纳</span></div></div></div>
+            <div class="prod-card" data-cat="保冷包"><div class="pimg"><img src="images/prod-cooler-woven.jpg" alt="编织保冷包"></div><div class="pinfo"><h3>编织保冷包</h3><p>编织工艺，时尚耐用，可定制Logo</p><div class="tags"><span>保冷</span><span>编织</span></div></div></div>
+            <div class="prod-card" data-cat="保冷包"><div class="pimg"><img src="images/prod-cooler-large.jpg" alt="大号保冷包"></div><div class="pinfo"><h3>大号保冷包</h3><p>大容量设计，露营/批量采购首选</p><div class="tags"><span>保冷</span><span>大容量</span></div></div></div>
+            <div class="prod-card" data-cat="保冷包"><div class="pimg"><img src="images/prod-cooler-bottle.jpg" alt="水瓶保冷袋"></div><div class="pinfo"><h3>水瓶保冷袋</h3><p>随身水瓶保温，户外/运动必备</p><div class="tags"><span>保冷</span><span>水壶袋</span></div></div></div>
+            <div class="prod-card" data-cat="背包"><div class="pimg"><img src="images/prod-bag-child.jpg" alt="客定儿童背包"></div><div class="pinfo"><h3>客定儿童背包</h3><p>可按需定制，适合儿童户外/上学使用</p><div class="tags"><span>背包</span><span>儿童</span></div></div></div>
+            <div class="prod-card" data-cat="背包"><div class="pimg"><img src="images/prod-bag-leather.jpg" alt="皮膜背包"></div><div class="pinfo"><h3>皮膜背包</h3><p>皮膜面料，时尚耐用，可定制Logo</p><div class="tags"><span>背包</span><span>时尚</span></div></div></div>
+            <div class="prod-card" data-cat="背包"><div class="pimg"><img src="images/prod-bag-solar.jpg" alt="太阳能背包"></div><div class="pinfo"><h3>太阳能背包</h3><p>带太阳能充电功能，户外出行必备</p><div class="tags"><span>背包</span><span>户外</span></div></div></div>
+            <div class="prod-card" data-cat="托特包"><div class="pimg"><img src="images/prod-bag-quilted.jpg" alt="绗缝单肩包"></div><div class="pinfo"><h3>绗缝单肩包</h3><p>绗缝工艺，简约时尚，单肩/斜挎两用</p><div class="tags"><span>单肩包</span><span>绗缝</span></div></div></div>
+            <div class="prod-card" data-cat="托特包"><div class="pimg"><img src="images/prod-bag-large-tote.jpg" alt="客定大号拎包"></div><div class="pinfo"><h3>客定大号拎包</h3><p>大容量设计，通勤购物皆可</p><div class="tags"><span>拎包</span><span>大容量</span></div></div></div>
+            <div class="prod-card" data-cat="托特包"><div class="pimg"><img src="images/prod-bag-cotton.jpg" alt="客定棉布拎包"></div><div class="pinfo"><h3>客定棉布拎包</h3><p>纯棉材质，环保舒适，可定制印花</p><div class="tags"><span>棉布</span><span>环保</span></div></div></div>
+            <div class="prod-card" data-cat="托特包"><div class="pimg"><img src="images/prod-bag-itabag.jpg" alt="痛包可定制"></div><div class="pinfo"><h3>痛包可定制</h3><p>透明展示面设计，可放置徽章/吧唧</p><div class="tags"><span>痛包</span><span>定制</span></div></div></div>
+            <div class="prod-card" data-cat="购物袋"><div class="pimg"><img src="images/prod-bag-large.jpg" alt="大号购物袋"></div><div class="pinfo"><h3>大号购物袋</h3><p>大容量设计，日常购物/超市采购首选</p><div class="tags"><span>购物袋</span><span>大容量</span></div></div></div>
+            <div class="prod-card" data-cat="购物袋"><div class="pimg"><img src="images/prod-bag-recycled1.jpg" alt="环保购物袋"></div><div class="pinfo"><h3>环保购物袋</h3><p>环保再生材料，绿色定制首选</p><div class="tags"><span>环保</span><span>再生</span></div></div></div>
+            <div class="prod-card" data-cat="购物袋"><div class="pimg"><img src="images/prod-bag-fold.jpg" alt="折叠购物袋"></div><div class="pinfo"><h3>折叠购物袋</h3><p>可折叠便携设计，随身携带不占空间</p><div class="tags"><span>折叠</span><span>便携</span></div></div></div>
+            <div class="prod-card" data-cat="购物袋"><div class="pimg"><img src="images/prod-bag-recycled2.jpg" alt="客定环保购物袋"></div><div class="pinfo"><h3>客定环保购物袋</h3><p>环保材质，可定制Logo</p><div class="tags"><span>环保</span><span>定制</span></div></div></div>
+            <div class="prod-card" data-cat="购物袋"><div class="pimg"><img src="images/prod-bag-fold2.jpg" alt="多功能折叠购物袋"></div><div class="pinfo"><h3>多功能折叠购物袋</h3><p>创意折叠设计，便携实用</p><div class="tags"><span>折叠</span><span>创意</span></div></div></div>
+            <div class="prod-card" data-cat="化妆包"><div class="pimg"><img src="images/prod-cosmetic-pouch.jpg" alt="化妆收纳包"></div><div class="pinfo"><h3>化妆收纳包</h3><p>大容量收纳，旅行出差必备</p><div class="tags"><span>化妆包</span><span>收纳</span></div></div></div>
+            <div class="prod-card" data-cat="化妆包"><div class="pimg"><img src="images/prod-cosmetic-wash.jpg" alt="洗漱收纳包"></div><div class="pinfo"><h3>洗漱收纳包</h3><p>便携洗漱收纳，挂式设计方便实用</p><div class="tags"><span>洗漱包</span><span>便携</span></div></div></div>
+            <div class="prod-card" data-cat="其他"><div class="pimg"><img src="images/prod-other-hood.jpg" alt="防灾头套/坐垫"></div><div class="pinfo"><h3>防灾头套/坐垫</h3><p>多功能设计，可作头套或坐垫使用</p><div class="tags"><span>防灾</span><span>多功能</span></div></div></div>
+            <div class="prod-card" data-cat="其他"><div class="pimg"><img src="images/prod-other-icepack.jpg" alt="冷敷冰袋"></div><div class="pinfo"><h3>冷敷冰袋</h3><p>医用/户外冷敷，便携实用</p><div class="tags"><span>冷敷</span><span>户外</span></div></div></div>
+            <div class="prod-card" data-cat="其他"><div class="pimg"><img src="images/prod-oem.svg" alt="定制加工"></div><div class="pinfo"><h3>OEM/ODM 定制</h3><p>来图来样，从打版到量产一站式服务</p><div class="tags"><span>定制</span><span>打样</span></div></div></div>
+            <div class="prod-card" data-cat="其他"><div class="pimg"><img src="images/prod-sewing.svg" alt="来料加工"></div><div class="pinfo"><h3>缝纫加工</h3><p>来料加工、半成品缝制，承接批量订单</p><div class="tags"><span>加工</span><span>批量</span></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>江苏宏泰箱包有限公司</h4>
+        <p>前身华扬旅游用品有限公司（2003年成立）· 20余年包袋制造经验</p>
+        <p>📍 仪征：大仪镇扬天路22号<br>📍 广陵：三星东路22号<br>📍 睢宁：邱集镇水利站向西200米</p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <a href="index.html">首页</a><br>
+        <a href="about.html">关于我们</a><br>
+        <a href="products.html">产品中心</a><br>
+        <a href="contact.html">联系我们</a>
+      </div>
+      <div>
+        <h4>联系方式</h4>
+        <p>📞 177-6199-7507</p>
+        <p>✉️ zhaoshengwei@hontaibags.com</p>
+        <p>📍 仪征 · 广陵 · 睢宁</p>
+      </div>
+    </div>
+    <div class="footer-bot">© 2026 江苏宏泰箱包有限公司 Jiangsu Hongtai Bags Co., Ltd. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click',function(){
+  this.nextElementSibling.classList.toggle('open');
+});
+// Product filter
+var items=document.querySelectorAll('#catList li');
+var cards=document.querySelectorAll('#prodGrid .prod-card');
+items.forEach(function(li){
+  li.addEventListener('click',function(){
+    items.forEach(function(x){x.className=''});
+    this.className='active';
+    var cat=this.getAttribute('data-cat');
+    document.getElementById('catTitle').textContent=this.textContent.trim();
+    cards.forEach(function(c){
+      c.style.display=(cat==='all'||c.getAttribute('data-cat')===cat)?'':'none';
+    });
+  });
+});
+</script>
+<script>);
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F0EEE8"/>
+  <!-- 背包主体 -->
+  <rect x="110" y="55" width="180" height="200" rx="20" fill="#E0DCD4"/>
+  <!-- 背带 -->
+  <path d="M125 70 Q90 80 85 140 Q80 200 110 230" fill="none" stroke="#D0CCC4" stroke-width="4" stroke-linecap="round"/>
+  <path d="M275 70 Q310 80 315 140 Q320 200 290 230" fill="none" stroke="#D0CCC4" stroke-width="4" stroke-linecap="round"/>
+  <!-- 拉链 -->
+  <line x1="200" y1="75" x2="200" y2="100" stroke="#CCC" stroke-width="2"/>
+  <!-- 口袋 -->
+  <rect x="140" y="180" width="120" height="60" rx="6" fill="#D8D4CC" stroke="#CCC" stroke-width="1"/>
+  <!-- 提手 -->
+  <path d="M170 55 Q200 30 230 55" fill="none" stroke="#D0CCC4" stroke-width="3" stroke-linecap="round"/>
+  <text x="200" y="280" text-anchor="middle" font-size="12" fill="#999" font-family="sans-serif">背包系列</text>
+</svg>

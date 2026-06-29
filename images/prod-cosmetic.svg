@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F0EEE8"/>
+  <!-- 化妆包主体 -->
+  <rect x="90" y="75" width="220" height="160" rx="20" fill="#E0DCD4"/>
+  <!-- 拉链 -->
+  <path d="M100 95 Q200 80 300 95" fill="none" stroke="#CCC" stroke-width="2"/>
+  <!-- 拉链头 -->
+  <rect x="190" y="85" width="20" height="10" rx="3" fill="#C8C4BC"/>
+  <!-- 装饰线 -->
+  <rect x="120" y="120" width="160" height="40" rx="6" fill="#D8D4CC" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="280" text-anchor="middle" font-size="12" fill="#999" font-family="sans-serif">化妆包/收纳包</text>
+</svg>

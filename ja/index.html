@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宏泰箱包（ホンタイバッグ） - プロフェッショナルバッグOEM/ODMメーカー</title>
+<meta name="description" content="江蘇宏泰箱包有限公司 — 20年以上のバッグ製造経験、プロフェッショナルOEM/ODMサービス。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect x='30' y='48' width='140' height='5' rx='2.5' fill='%231B2A4A'/><rect x='97' y='48' width='6' height='83' rx='3' fill='%231B2A4A'/><rect x='30' y='131' width='140' height='5' rx='2.5' fill='%231B2A4A'/><path d='M58 34 Q100 10 142 34' fill='none' stroke='%231B2A4A' stroke-width='4' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'PingFang SC','Microsoft YaHei',Arial,sans-serif;color:#333;background:#fff;font-size:13px;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:1180px;margin:0 auto}
+
+.header{background:#1B2A4A;height:30px;line-height:30px;color:#fff;font-size:12px}
+.header .container{display:flex;justify-content:space-between;align-items:center}
+.header a{color:#C8A45C}
+
+.nav{background:#fff;border-bottom:2px solid #ddd;position:sticky;top:0;z-index:100}
+.nav .container{display:flex;align-items:center;height:60px}
+.nav-logo{display:flex;align-items:center;gap:6px;font-size:15px;font-weight:700;color:#1B2A4A;margin-right:36px}
+.nav-logo small{display:block;font-size:9px;font-weight:400;color:#999}
+.nav-links{display:flex;list-style:none;gap:0}
+.nav-links>li{position:relative}
+.nav-links>li>a{display:block;padding:0 20px;font-size:13px;color:#333;line-height:58px;border-bottom:2px solid transparent}
+.nav-links>li>a:hover,.nav-links>li>a.on{color:#1B2A4A;border-bottom-color:#1B2A4A;font-weight:600}
+.nav-links .dropdown{position:absolute;top:100%;left:0;background:#fff;border:1px solid #e0e0e0;border-top:2px solid #1B2A4A;min-width:140px;display:none;z-index:200;box-shadow:0 3px 8px rgba(0,0,0,0.06)}
+.nav-links .dropdown a{display:block;padding:8px 16px;font-size:12px;color:#555;border-bottom:1px solid #f0f0f0;line-height:1.6}
+.nav-links .dropdown a:last-child{border-bottom:none}
+.nav-links .dropdown a:hover{background:#f8f8f8;color:#1B2A4A}
+.nav-links>li:hover .dropdown{display:block}
+.nav-toggle{display:none;background:none;border:none;font-size:20px;cursor:pointer;margin-left:auto;padding:4px 8px}
+
+.banner{background:linear-gradient(135deg,#1B2A4A,#2C3E6B);padding:5px 0}
+.banner-inner{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center}
+.banner h1{font-size:18px;color:#fff;line-height:1.3;letter-spacing:1px}
+.banner h1 em{color:#C8A45C;font-style:normal}
+.banner p{font-size:13px;color:rgba(255,255,255,0.75);margin:4px 0 8px;line-height:1.5}
+.banner .tags{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px}
+.banner .tags span{font-size:11px;padding:2px 7px;border-radius:2px;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.25);color:#C8A45C}
+.banner-btn{display:inline-block;padding:5px 16px;background:#C8A45C;color:#1B2A4A;border-radius:3px;font-size:12px;font-weight:600}
+.banner-btn:hover{background:#DFC27A}
+.banner-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.banner-grid .bg-item{border-radius:3px;overflow:hidden;background:#f0efe9}
+.banner-grid .bg-item img{width:100%;height:auto;max-height:140px;object-fit:cover;display:block}
+.banner-grid .bg-item:first-child{grid-column:1/3}
+
+.sec{padding:40px 0}
+.sec-gray{background:#f8f8f8}
+.stitle{text-align:center;font-size:22px;font-weight:700;color:#1B2A4A;margin-bottom:4px;letter-spacing:1px}
+.ssub{text-align:center;font-size:13px;color:#888;margin-bottom:20px}
+
+.prod-wrap{display:flex;gap:20px}
+.prod-side{width:195px;flex-shrink:0}
+.prod-side h4{font-size:14px;color:#1B2A4A;padding:8px 0;border-bottom:2px solid #1B2A4A;margin-bottom:0}
+.prod-side ul{list-style:none;border:1px solid #e0e0e0;border-top:0}
+.prod-side li{padding:7px 10px;font-size:12px;color:#555;border-bottom:1px solid #f0f0f0;cursor:pointer}
+.prod-side li a{display:block;color:#555}
+.prod-side li:last-child{border-bottom:0}
+.prod-side li:hover,.prod-side li a:hover{color:#1B2A4A;font-weight:600}
+.prod-main{flex:1}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.prod-card{border:1px solid #e5e5e5;overflow:hidden;background:#fff}
+.prod-card:hover{border-color:#1B2A4A}
+.prod-card .pi{height:auto;background:#f5f5f5;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.prod-card .pi img{width:100%;height:auto;object-fit:cover}
+.prod-card .pn{text-align:center;padding:8px 6px}
+.prod-card .pn h3{font-size:13px;color:#1B2A4A}
+.prod-card .pn p{font-size:11px;color:#888;margin-top:2px}
+
+.adv-box{max-width:920px;margin:0 auto}
+.adv-block{margin-bottom:20px;background:#fff;border:1px solid #e5e5e5;overflow:hidden}
+.adv-block:last-child{margin-bottom:0}
+.adv-block .ah{height:auto;background:#f0efe9;display:flex;align-items:center;justify-content:center;overflow:hidden;font-size:40px;color:#aaa}
+.adv-block .ah img{width:100%;height:auto;max-height:180px;object-fit:cover}
+.adv-block .ab{padding:16px 20px 20px}
+.adv-block .ab .an{font-size:12px;color:#1B2A4A;font-weight:700}
+.adv-block .ab h3{font-size:16px;color:#1B2A4A;margin:4px 0 8px}
+.adv-block .ab p{font-size:12px;color:#555;line-height:2;padding-left:10px;position:relative}
+.adv-block .ab p::before{content:"·";position:absolute;left:0;color:#1B2A4A}
+
+.know-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.know-card{border:1px solid #e5e5e5;padding:16px;background:#fff}
+.know-card .kd{font-size:11px;color:#aaa}
+.know-card h4{font-size:13px;color:#1B2A4A;margin:4px 0}
+.know-card p{font-size:11px;color:#888}
+
+.about-wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.about-wrap p{font-size:12px;color:#555;margin-bottom:8px;line-height:1.9}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.about-stats .item{background:#f5f5f5;padding:12px;text-align:center;border-radius:4px}
+.about-stats .item .num{font-size:22px;font-weight:700;color:#1B2A4A}
+.about-stats .item .lb{font-size:11px;color:#888}
+.about-cites{text-align:center;font-size:12px;color:#555;line-height:2}
+.about-cites .cl{display:inline}
+.about-cites .cl+.cl::before{content:" | ";color:#ddd}
+
+.partner-logos{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:14px 0}
+.partner-logos span{display:inline-block;padding:6px 18px;border:1px solid #e0e0e0;font-size:12px;color:#555;border-radius:3px}
+
+footer{background:#1B2A4A;color:rgba(255,255,255,0.5);padding:30px 0 16px;font-size:12px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:24px;margin-bottom:16px}
+.footer-grid h4{color:#fff;font-size:13px;margin-bottom:8px}
+.footer-grid p,.footer-grid a{color:rgba(255,255,255,0.5);line-height:2;font-size:12px}
+.footer-grid a:hover{color:#C8A45C}
+.footer-bot{text-align:center;border-top:1px solid rgba(255,255,255,0.06);padding-top:12px;font-size:11px}
+
+@media(max-width:1180px){.container{width:100%;padding:0 15px}}
+@media(max-width:860px){
+  .prod-wrap{flex-direction:column}
+  .prod-side{width:100%}
+  .prod-grid,.know-grid{grid-template-columns:1fr 1fr}
+  .about-wrap{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .prod-grid,.know-grid{grid-template-columns:1fr}
+  .adv-block .ah{height:auto;max-height:120px}
+  .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:#fff;flex-direction:column;border-bottom:2px solid #ddd;z-index:99}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:0 20px;line-height:42px;border-bottom:1px solid #f0f0f0}
+  .nav-toggle{display:block}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div>OEM/ODMバッグメーカー · <a href="../contact.html">お問い合わせ</a></div>
+    <div style="font-size:11px;">
+      <a href="../index.html" style="color:rgba(255,255,255,0.6);margin-right:6px;">🇨🇳 中文</a>
+      <a href="../en/index.html" style="color:rgba(255,255,255,0.6);margin-right:6px;">🇬🇧 EN</a>
+      <a href="index.html" style="color:#fff;font-weight:600;">🇯🇵 日本語</a>
+    </div>
+  </div>
+</div>
+
+<div class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <svg width="26" height="26" viewBox="0 0 200 200"><rect x="30" y="48" width="140" height="5" rx="2.5" fill="#1B2A4A"/><rect x="97" y="48" width="6" height="83" rx="3" fill="#1B2A4A"/><rect x="30" y="131" width="140" height="5" rx="2.5" fill="#1B2A4A"/><path d="M58 34 Q100 10 142 34" fill="none" stroke="#1B2A4A" stroke-width="4"/></svg>
+      <span>宏泰箱包<small>ホンタイバッグ</small></span>
+    </a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="on">ホーム</a></li>
+      <li>
+        <a href="about.html">会社概要</a>
+        <div class="dropdown">
+          <a href="about.html">会社案内</a>
+          <a href="about.html">設備</a>
+          <a href="about.html">取引先</a>
+        </div>
+      </li>
+      <li>
+        <a href="products.html">製品情報</a>
+        <div class="dropdown">
+          <a href="products.html">バックパック</a>
+          <a href="products.html">ショッピングバッグ</a>
+          <a href="products.html">トートバッグ</a>
+          <a href="products.html">保冷バッグ</a>
+          <a href="products.html">化粧ポーチ</a>
+          <a href="products.html">ウエストバッグ</a>
+          <a href="products.html">その他</a>
+        </div>
+      </li>
+      <li>
+        <a href="contact.html">お問い合わせ</a>
+        <div class="dropdown">
+          <a href="contact.html">連絡先</a>
+          <a href="contact.html">お見積り</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="banner">
+  <div class="container banner-inner">
+    <div>
+      <div class="tags"><span>OEM/ODM</span><span>カスタムデザイン</span><span>高品質</span></div>
+      <h1>宏泰箱包<br>品質第一 · <em>2003年創業</em></h1>
+      <p>20年以上のバッグ製造経験 · 3工場（儀征・広陵・睢寧）<br>バックパック、ショッピングバッグ、保冷バッグ、化粧ポーチなどOEM/ODM対応<br>サンプル3-7日 · 月産8,000-10,000個 · 最小ロットなし</p>
+      <a href="products.html" class="banner-btn">製品を見る</a>
+    </div>
+    <div class="banner-grid">
+      <div class="bg-item"><img src="../images/prod-bag-child.jpg" alt="バックパック"></div>
+      <div class="bg-item"><img src="../images/prod-bag-large.jpg" alt="ショッピングバッグ"></div>
+      <div class="bg-item"><img src="../images/prod-cooler-woven.jpg" alt="保冷バッグ"></div>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="products">
+  <div class="container">
+    <div class="stitle">製品情報</div>
+    <div class="ssub">豊富な品揃え · ワンストップ調達</div>
+    <div class="prod-wrap">
+      <div class="prod-side">
+        <h4>カテゴリー</h4>
+        <ul>
+          <li><a href="products.html">バックパック</a></li>
+          <li><a href="products.html">ショッピングバッグ</a></li>
+          <li><a href="products.html">トートバッグ</a></li>
+          <li><a href="products.html">保冷バッグ</a></li>
+          <li><a href="products.html">化粧ポーチ</a></li>
+          <li><a href="products.html">ウエストバッグ</a></li>
+          <li><a href="products.html">その他</a></li>
+        </ul>
+      </div>
+      <div class="prod-main">
+        <div class="prod-grid">
+          <div class="prod-card"><a href="products.html"><div class="pi"><img src="../images/prod-bag-child.jpg" alt="バックパック"></div><div class="pn"><h3>キッズバックパック</h3></div></a></div>
+          <div class="prod-card"><a href="products.html"><div class="pi"><img src="../images/prod-bag-leather.jpg" alt="レザーバックパック"></div><div class="pn"><h3>レザーバックパック</h3></div></a></div>
+          <div class="prod-card"><a href="products.html"><div class="pi"><img src="../images/prod-bag-large.jpg" alt="ショッピングバッグ"></div><div class="pn"><h3>ショッピングバッグ</h3></div></a></div>
+          <div class="prod-card"><a href="products.html"><div class="pi"><img src="../images/prod-bag-fold.jpg" alt="折りたたみバッグ"></div><div class="pn"><h3>折りたたみバッグ</h3></div></a></div>
+          <div class="prod-card"><a href="products.html"><div class="pi"><img src="../images/prod-bag-recycled1.jpg" alt="エコバッグ"></div><div class="pn"><h3>エコバッグ</h3></div></a></div>
+          <div class="prod-card"><a href="products.html"><div class="pi"><img src="../images/prod-cosmetic-pouch.jpg" alt="化粧ポーチ"></div><div class="pn"><h3>化粧ポーチ</h3></div></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec" id="about">
+  <div class="container">
+    <div class="stitle">会社概要</div>
+    <div class="ssub">江蘇省揚州市 · 20年以上のバッグ製造経験</div>
+    <div class="about-wrap">
+      <div>
+        <p>江蘇宏泰箱包有限公司（旧社名：華揚旅游用品有限公司）は2003年に設立されました。20年以上にわたりバッグ製造に特化し、現在は揚州儀征、揚州広陵、徐州睢寧の3つの工場を運営しています。従業員約200名、自動裁断機、レーザー裁断機、自動テンプレート機などの最新設備を完備しています。</p>
+        <p>髙島屋、電通、Unifastなどの日本の商社・ブランドや、Herschel、Laura Starなどの国際ブランドに製品を提供しています。エンドユーザーにはDHC、サントリー、キリン、アサヒなどが含まれます。サンプル製作3-7日、月産8,000-10,000個、最小ロットなし。</p>
+        <p style="margin-top:10px;"><a href="about.html" style="color:#1B2A4A;font-weight:600;font-size:13px;">もっと見る →</a></p>
+      </div>
+      <div>
+        <div class="about-stats">
+          <div class="item"><div class="num">20+</div><div class="lb">年の経験</div></div>
+          <div class="item"><div class="num">3</div><div class="lb">工場</div></div>
+          <div class="item"><div class="num">200</div><div class="lb">従業員</div></div>
+          <div class="item"><div class="num">3-7</div><div class="lb">日でサンプル</div></div>
+        </div>
+        <div class="about-cites">
+          <b>取引先：</b><br>
+          <span class="cl">髙島屋</span><span class="cl">電通</span><span class="cl">Unifast</span><span class="cl">Herschel</span><span class="cl">DHC</span><span class="cl">サントリー</span><span class="cl">キリン</span><span class="cl">アサヒ</span><span class="cl">Laura Star</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="container">
+    <div class="stitle">当社の強み</div>
+    <div class="ssub">20年以上の実績 · 品質第一</div>
+    <div class="adv-box">
+      <div class="adv-block">
+        <div class="ah" style="display:grid;grid-template-columns:1fr 1fr;padding:0;height:auto;background:#f0efe9;">
+          <img src="../images/equip-cutting1.jpg" alt="コンピュータ裁断機" style="width:100%;height:auto;display:block">
+          <img src="../images/equip-laser.jpg" alt="レーザー裁断機" style="width:100%;height:auto;display:block">
+        </div>
+        <div class="ab">
+          <div class="an">01 工場体制</div>
+          <h3>3工場 · 一貫生産体制</h3>
+          <p>儀征（裁断・サンプリング）、広陵（縫製・包装）、睢寧（検品・包装）</p>
+          <p>自動裁断機、レーザー裁断機、自動テンプレート機、各種ミシン数十台</p>
+          <p>従業員200名、うち熟練縫製工80名</p>
+          <p>月産8,000〜10,000個、安定した納期</p>
+        </div>
+      </div>
+      <div class="adv-block">
+        <div class="ah" style="display:grid;grid-template-columns:1fr 1fr;padding:0;height:auto;background:#f0efe9;">
+          <img src="../images/prod-japan-b.jpg" alt="日本取引先" style="width:100%;height:auto;display:block">
+          <img src="../images/prod-japan-a.jpg" alt="日本取引先" style="width:100%;height:auto;display:block">
+        </div>
+        <div class="ab">
+          <div class="an">02 日本品質</div>
+          <h3>日本のブランドから信頼される品質</h3>
+          <p>髙島屋、電通、Unifast、高孝（Takakoh）、力匠（Rikisho）、i-goodsなどと長期取引</p>
+          <p>エンドユーザー：DHC、サントリー、キリン、アサヒ、阪神タイガース、ヤクルトスワローズ</p>
+          <p>国際ブランドHerschel、Laura Starにも供給</p>
+          <p>素材検品から完成品検査まで厳格な品質管理</p>
+        </div>
+      </div>
+      <div class="adv-block">
+        <div class="ah" style="display:grid;grid-template-columns:1fr 1fr;padding:0;height:auto;background:#f0efe9;">
+          <img src="../images/equip-workshop.jpg" alt="サンプル工房" style="width:100%;height:auto;display:block">
+          <img src="../images/equip-sample-room.jpg" alt="サンプル室" style="width:100%;height:auto;display:block">
+        </div>
+        <div class="ab">
+          <div class="an">03 柔軟な対応</div>
+          <h3>迅速なサンプル · 最小ロットなし</h3>
+          <p>サンプル製作3-7日、迅速なレスポンス</p>
+          <p>最小ロットなし、小ロット〜大量生産まで対応可能</p>
+          <p>トライアル生産から量産まで、お客様の開発リズムに柔軟に対応</p>
+          <p>工場見学は随時受付、3工場でお待ちしております</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sec sec-gray">
+  <div class="container">
+    <div class="stitle">取引先</div>
+    <div class="ssub">世界中のブランドから信頼されています</div>
+    <div class="partner-logos">
+      <span>髙島屋</span><span>電通</span><span>Unifast</span><span>Herschel</span>
+      <span>DHC</span><span>サントリー</span><span>キリン</span><span>アサヒ</span><span>Laura Star</span>
+    </div>
+  </div>
+</div>
+
+<div class="sec sec-gray">
+  <div class="container">
+    <div class="stitle">ナレッジ</div>
+    <div class="ssub">業界情報 · よくある質問</div>
+    <div class="know-grid">
+      <div class="know-card">
+        <div class="kd">2026-06-20</div>
+        <h4>バッグOEMの流れ</h4>
+        <p>打ち合わせ、サンプル確認、材料選定から量産納品まで、OEMの全工程をご説明します。</p>
+      </div>
+      <div class="know-card">
+        <div class="kd">2026-06-15</div>
+        <h4>バッグ生地の選び方</h4>
+        <p>オックスフォード、キャンバス、ナイロン、PUレザー…用途に合わせた素材選び。</p>
+      </div>
+      <div class="know-card">
+        <div class="kd">2026-06-10</div>
+        <h4>OEMとODMの違い</h4>
+        <p>来図（お客様のデザイン）と来样（既存サンプル）の違いと選び方。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>江蘇宏泰箱包有限公司</h4>
+        <p>旧社名：華揚旅游用品有限公司（2003年設立）· 20年以上のバッグ製造経験</p>
+        <p>📍 儀征：大儀鎮揚天路22号<br>📍 広陵：三星東路22号<br>📍 睢寧：邱集鎮水利站より西200m</p>
+      </div>
+      <div>
+        <h4>メニュー</h4>
+        <a href="index.html">ホーム</a><br>
+        <a href="about.html">会社概要</a><br>
+        <a href="products.html">製品情報</a><br>
+        <a href="contact.html">お問い合わせ</a>
+      </div>
+      <div>
+        <h4>連絡先</h4>
+        <p>📞 177-6199-7507</p>
+        <p>✉️ zhaoshengwei@hontaibags.com</p>
+        <p>📍 儀征 · 広陵 · 睢寧</p>
+      </div>
+    </div>
+    <div class="footer-bot">© 2026 江蘇宏泰箱包有限公司 Jiangsu Hongtai Bags Co., Ltd. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click',function(){
+  this.nextElementSibling.classList.toggle('open');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F0EEE8"/>
+  <!-- 缝纫机 -->
+  <rect x="110" y="120" width="180" height="80" rx="8" fill="#E0DCD4" stroke="#D0CCC4" stroke-width="2"/>
+  <rect x="110" y="80" width="100" height="60" rx="6" fill="#D8D4CC" stroke="#D0CCC4" stroke-width="2"/>
+  <!-- 机头 -->
+  <rect x="210" y="70" width="40" height="80" rx="6" fill="#D0CCC4"/>
+  <!-- 缝纫线 -->
+  <path d="M240 70 Q260 45 280 55 Q300 65 290 90" fill="none" stroke="#C8C4BC" stroke-width="2" stroke-dasharray="4,3"/>
+  <!-- 针 -->
+  <line x1="230" y1="70" x2="230" y2="120" stroke="#BBB" stroke-width="1.5"/>
+  <text x="200" y="280" text-anchor="middle" font-size="12" fill="#999" font-family="sans-serif">缝纫加工</text>
+</svg>

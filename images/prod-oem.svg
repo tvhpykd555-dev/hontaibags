@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F0EEE8"/>
+  <!-- 图纸/量尺 -->
+  <rect x="100" y="50" width="160" height="200" rx="4" fill="#E8E4DE" stroke="#D8D4CC" stroke-width="2"/>
+  <rect x="100" y="55" width="160" height="30" rx="4" fill="#D8D4CC"/>
+  <line x1="120" y1="110" x2="240" y2="110" stroke="#CCC" stroke-width="2"/>
+  <line x1="120" y1="135" x2="220" y2="135" stroke="#CCC" stroke-width="2"/>
+  <line x1="120" y1="160" x2="230" y2="160" stroke="#CCC" stroke-width="2"/>
+  <!-- 缝纫针线 -->
+  <path d="M270 80 Q290 100 280 130 Q270 160 285 190" fill="none" stroke="#C8C4BC" stroke-width="3"/>
+  <!-- 线轴 -->
+  <circle cx="285" cy="70" r="12" fill="#D8D4CC" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="280" text-anchor="middle" font-size="12" fill="#999" font-family="sans-serif">OEM/ODM 定制</text>
+</svg>

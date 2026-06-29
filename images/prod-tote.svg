@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#F0EEE8"/>
+  <!-- 托特包主体 -->
+  <rect x="100" y="60" width="200" height="190" rx="12" fill="#E0DCD4"/>
+  <!-- 提手 -->
+  <path d="M135 60 Q140 25 165 25" fill="none" stroke="#D0CCC4" stroke-width="5" stroke-linecap="round"/>
+  <path d="M265 60 Q260 25 235 25" fill="none" stroke="#D0CCC4" stroke-width="5" stroke-linecap="round"/>
+  <!-- 口袋 -->
+  <rect x="130" y="110" width="140" height="40" rx="4" fill="#D8D4CC" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="280" text-anchor="middle" font-size="12" fill="#999" font-family="sans-serif">手提袋/托特包</text>
+</svg>
