@@ -121,6 +121,21 @@ footer{background:#1B2A4A;color:rgba(255,255,255,0.5);padding:30px 0 16px;font-s
   .nav-links.open{display:flex}
   .nav-links a{padding:0 20px;line-height:42px;border-bottom:1px solid #f0f0f0}
   .nav-toggle{display:block}
+  .banner-inner{grid-template-columns:1fr;gap:6px}
+  .banner h1{font-size:15px}
+  .banner p{font-size:11px}
+  .banner-grid .bg-item img{max-height:100px}
+  .header .container{flex-wrap:wrap;gap:0;height:auto;padding:2px 10px}
+  .header .container > div{font-size:10px;line-height:22px}
+  .sec{padding:24px 0}
+  .stitle{font-size:18px}
+  .about-wrap p{font-size:11px}
+  .adv-block .ab{padding:10px 14px 14px}
+  .adv-block .ab p{font-size:11px;line-height:1.7}
+  .know-card{padding:10px}
+  .footer-grid{gap:12px}
+  .prod-card .pn{padding:6px}
+  .prod-card .pn h3{font-size:12px}
 }
 </style>
 </head>
@@ -181,7 +196,7 @@ footer{background:#1B2A4A;color:rgba(255,255,255,0.5);padding:30px 0 16px;font-s
     <div>
       <div class="tags"><span>OEM/ODM</span><span>来图定制</span><span>品质保障</span><span>无起订量</span></div>
       <h1>江苏宏泰箱包<br>精工制造 · <em>品质为本</em></h1>
-      <p>专注箱包制造20余年 · 扬州仪征、广陵、睢宁三地工厂协同<br>承接背包、购物袋、保冷包、化妆包等各类箱包OEM/ODM订单<br>打样3-7天 · 月产8,000-10,000件 · 大中小订单均可承接</p>
+      <p>专注箱包制造20余年 · 扬州仪征、广陵、睢宁三地工厂协同<br>承接背包、购物袋、保冷包、化妆包等各类箱包OEM/ODM订单<br>打样3-7天 · 日产8,000-10,000件 · 大中小订单均可承接</p>
       <a href="products.html" class="banner-btn">查看产品</a>
     </div>
     <div class="banner-grid">
@@ -232,7 +247,7 @@ footer{background:#1B2A4A;color:rgba(255,255,255,0.5);padding:30px 0 16px;font-s
     <div class="about-wrap">
       <div>
         <p>江苏宏泰箱包有限公司，前身为华扬旅游用品有限公司，成立于2003年。专注包袋制造二十余载，现拥有扬州仪征、扬州广陵、徐州睢宁三家分公司。公司现有员工约200人，配备自动裁床、激光裁床、自动模板机等先进设备。</p>
-        <p>长期服务日本高岛屋、电通、Unifast等知名商社及Herschel、劳拉之星等品牌。终端客户涵盖DHC、三得利、麒麟、朝日等知名企业。来稿/出稿打样平均3-7天，月产8,000-10,000件，无起订量要求。</p>
+        <p>长期服务日本知名商社及国际品牌，产品出口日本、欧美市场。终端客户涵盖食品、化妆品、户外用品等行业。来稿/出稿打样平均3-7天，日产8,000-10,000件，无起订量要求。</p>
         <p style="margin-top:10px;"><a href="about.html" style="color:#1B2A4A;font-weight:600;font-size:13px;">了解更多 →</a></p>
       </div>
       <div>
@@ -244,7 +259,7 @@ footer{background:#1B2A4A;color:rgba(255,255,255,0.5);padding:30px 0 16px;font-s
         </div>
         <div class="about-cites">
           <b>合作客户：</b><br>
-          <span class="cl">高岛屋</span><span class="cl">电通</span><span class="cl">Unifast</span><span class="cl">Herschel</span><span class="cl">DHC</span><span class="cl">三得利</span><span class="cl">麒麟</span><span class="cl">朝日</span><span class="cl">劳拉之星</span>
+          <span class="cl">日本商社</span><span class="cl">国际品牌</span><span class="cl">食品行业</span><span class="cl">化妆品行业</span><span class="cl">户外用品</span>
         </div>
       </div>
     </div>
@@ -268,7 +283,7 @@ footer{background:#1B2A4A;color:rgba(255,255,255,0.5);padding:30px 0 16px;font-s
           <p>扬州仪征、广陵、徐州睢宁三家分公司协同运作，员工约200人</p>
           <p>配备自动裁床、激光裁床、自动模板机等设备数十台</p>
           <p>仪征（裁切/打样/检品）· 广陵（加工包装）· 睢宁（加工检品）</p>
-          <p>月产箱包8,000-10,000件，产能充足、交期稳定</p>
+          <p>日产箱包8,000-10,000件，产能充足、交期稳定</p>
         </div>
       </div>
       <div class="adv-block">
@@ -279,9 +294,9 @@ footer{background:#1B2A4A;color:rgba(255,255,255,0.5);padding:30px 0 16px;font-s
         <div class="ab">
           <div class="an">产品实力 02</div>
           <h3>长期服务日本知名品牌</h3>
-          <p>与高岛屋、电通、Unifast、高孝（Takakoh）、力匠（Rikisho）、i-goods等商社长期合作</p>
-          <p>终端客户涵盖DHC、三得利、麒麟、朝日等知名企业</p>
-          <p>同时为国际品牌Herschel及国内品牌劳拉之星提供制造服务</p>
+          <p>与日本知名商社及国际品牌长期合作，产品出口日本、欧美市场</p>
+          <p>终端客户涵盖食品、化妆品、户外用品等多个行业的知名企业</p>
+          <p>同时为国内外知名品牌提供OEM/ODM制造服务</p>
           <p>深谙日本客户品质标准，从面料到成品严苛品控</p>
         </div>
       </div>
@@ -309,8 +324,7 @@ footer{background:#1B2A4A;color:rgba(255,255,255,0.5);padding:30px 0 16px;font-s
     <div class="stitle">合作伙伴</div>
     <div class="ssub">携手同行，与您一起塑造未来</div>
     <div class="partner-logos">
-      <span>高岛屋</span><span>电通</span><span>Unifast</span><span>Herschel</span>
-      <span>DHC</span><span>三得利</span><span>麒麟</span><span>朝日</span><span>劳拉之星</span>
+      <span>日本知名商社</span><span>国际品牌客户</span><span>食品行业客户</span><span>化妆品行业客户</span><span>户外品牌客户</span>
     </div>
   </div>
 </div>
